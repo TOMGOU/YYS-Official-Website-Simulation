@@ -1,0 +1,537 @@
+@charset "UTF-8";
+body{
+	min-width: 1280px;
+}
+body.noScroll{
+    overflow: hidden;
+    height: 100%;
+}
+/********************** head part ***************************/
+#header{
+	background: url(../img/home/bg1.jpg) no-repeat top center;
+	width: 100%;
+	height: 1080px;
+}
+#header object{
+	opacity: 0;
+}
+/*swiper NO.1*/
+#header div.swiper1{
+	position: absolute;
+	left: -145px;
+	top: 20px;
+	width: 145px;
+	height: 120px;
+	opacity: 0;
+}
+#header div.swiper1 a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+/*swiper NO.2*/
+#header div.swiper2{
+	position: absolute;
+	right: -176px;
+	top: 40px;
+	width: 176px;
+	height: 45px;
+	opaciry: 0;
+}
+#header div.swiper2 a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+#header div.swiper2 div.cover{
+	position: absolute;
+	top: 0;
+	background-color: #333;
+	opacity: 0.1;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+}
+#header div.swiper2:hover div.cover{
+	display: none;
+}
+/*swiper NO.3*/
+#header div.swiper3{
+	position: absolute;
+	right: 60px;
+	top: 700px;
+	width: 300px;
+	height: 500px;
+	opacity: 0;
+	background: url("../img/home/swp3.png");
+}
+/*swiper NO.4*/
+#header div.swiper4{
+	position: absolute;
+	top: 700px;
+	right: 150px;
+	width: 340px;
+	height: 160px;
+	opacity: 0;
+}
+#header div.swiper4 p{
+	font-size: 16px;
+	font-weight: bold;
+	color: #3d2672
+}
+#header div.swiper4 div.wrap{
+	width: 335px;
+	margin-top: 10px;
+}
+#header div.swiper4 div.wrap div.left{
+	position: relative;
+	width: 130px;
+	height: 125px;
+	background: url("../img/home/qrcode.png") no-repeat top center/130px 125px;
+}
+#header div.swiper4 div.wrap div.left img{
+	position: absolute;
+	left: -12px;
+	top: 0px;
+	width: 160px;
+	animation: scan 3s linear infinite;
+}
+@keyframes scan{
+	0{top: 0px;}
+	50%{top: 115px;}
+	100%{top: 0px;}
+}
+#header div.swiper4 div.wrap div.right{
+	width: 200px;
+	height: 125px;
+}
+#header div.swiper4 div.wrap div.right a{
+	display: block;
+	width: 100%;
+	height: 60px;
+}
+#header div.swiper4 div.wrap div.right a img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+#header div.swiper4 div.wrap div.right a.and img{
+	background: #999;
+	opacity: 0.9;
+}
+#header div.swiper4 div.wrap div.right a.and img:hover{
+	opacity: 1;
+}
+#header div.swiper4 div.wrap div.right a.ios{
+	margin-top: 5px;
+}
+/*video button*/
+#header div.videoButton{
+	position: absolute;
+	top: 450px;
+	right: 320px;
+	width: 165px;
+	height: 120px;
+	background: url("../img/home/videoBtn.png") no-repeat;
+	cursor: pointer;
+}
+#header div.videoButton img.videoBtnAR{
+	position: absolute;
+	top: 2px;
+	left: 48px;
+}
+#header div.video{
+	position: fixed;
+	left: 250px;
+	top: 50px;
+	width:800px;
+	height: 500px;
+	display: none;
+}
+#header div.video div.text{
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	color: #fff;
+}
+#header div.video #video{
+	width:100%;
+	height: 100%;
+	box-shadow: #000 0 0 0px 50px inset;
+}
+#header div.video span.close{
+	display: block;
+	width: 34px;
+	height: 34px;
+	position: absolute;
+	right: -40px;
+	top: 0px;
+	background: url("../img/home/close.png") no-repeat ;
+}
+#header div.video span.close:hover{
+	transform: rotate(360deg);
+	transition: 1s;
+}
+#header div.next{
+	position: absolute;
+	left: 620px;
+	top: 820px;
+	width: 30px;
+	height: 70px;
+	background: url("../img/home/dBtn.png") no-repeat;
+	animation: next 2s linear infinite;
+}
+@keyframes next{
+	from{top: 820px; opaciry: 1;}
+	to{top: 920px; opacity: 0;}
+}
+/********************** newInfo part ***************************/
+#newInfo{
+	position: relative;
+	background: url("../img/home/newInfo/bg2.jpg") no-repeat top center;
+	width: 100%;
+	height: 800px;
+}
+/*main*/
+#newInfo div.main{
+	position: relative;
+	width: 1280px;
+	height: 100%;
+	margin: 0 auto;
+	border: 1px solid transparent;
+}
+#newInfo div.main div.title{
+	position: absolute;
+	left: 250px;
+	width: 800px;
+	height:  150px;
+	background: url("../img/home/newInfo/newinf.png") no-repeat;
+}
+#newInfo div.main ul.box{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	height: 35px;
+	margin-top: 200px;
+}
+#newInfo div.main ul.box li.niList{
+	position: relative;
+	width:418px;
+	height: 196px;
+	cursor: pointer;
+}
+#newInfo div.main ul.box li.niList img{
+	position: absolute;
+	top: 0px;
+	display: block;
+	width:418px;
+	height: 196px;
+	transition: 0.5s;
+}
+#newInfo div.main ul.box li.niList:hover img{
+	top: -15px;
+}
+#newInfo div.main ul.box li.niList div{
+	background-color: #a57c47;
+}
+#newInfo div.main ul.box li.niList .top{
+	position: absolute;
+	top: -6px;
+	left: 9px;
+	width: 0px;
+	height: 2px;
+}
+#newInfo div.main ul.box li.niList:hover .top{
+	animation: hMove 0.4s 0s linear forwards;
+}
+#newInfo div.main ul.box li.niList .right{
+	position: absolute;
+	top: -6px;
+	right: 9px;
+	width: 2px;
+	height: 0px;
+}
+#newInfo div.main ul.box li.niList:hover .right{
+	animation: vMove 0.2s 0.4s linear forwards;
+}
+#newInfo div.main ul.box li.niList .bottom{
+	position: absolute;
+	bottom: 26px;
+	right: 9px;
+	width: 0px;
+	height: 2px;
+}
+#newInfo div.main ul.box li.niList:hover .bottom{
+	animation: hMove 0.4s 0.6s linear forwards;
+}
+#newInfo div.main ul.box li.niList .left{
+	position: absolute;
+	bottom: 26px;
+	left: 9px;
+	width: 2px;
+	height: 0px;
+}
+#newInfo div.main ul.box li.niList:hover .left{
+	animation: vMove 0.2s 1s linear forwards;
+}
+@keyframes hMove{
+	0{width: 0;}
+	100%{width: 400px;}
+}
+@keyframes vMove{
+	0{height: 0;}
+	100%{height: 176px;}
+}
+/*content popup*/
+#newInfo div.contentPopup{
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	width: 1280px;
+	height: 735px;
+	background: rgba(0,0,0,0.5);
+	display: none;
+}
+#newInfo div.contentPopup ul.content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 1180px;
+	height: 735px;
+	margin: -365.5px 0 0 -590px;
+}
+#newInfo div.contentPopup ul.content li.conList{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: -20px 0 0 -70px;
+	display: none;
+}
+#newInfo div.contentPopup ul.content li.conList div.close{
+	position: absolute;
+	top: 120px;
+	right: 0px;
+	width: 34px;
+	height: 34px;
+	background: url("../img/home/close.png") no-repeat;
+	transition: 1s;
+}
+#newInfo div.contentPopup ul.content li.conList div.close:hover{
+	transform: rotate(360deg);
+}
+#newInfo div.contentPopup ul.content li.conList div.txtBox{
+	position: absolute;
+	top: 200px;
+	left: 575px;
+	width: 360px;
+	height: 350px;
+	padding: 0 30px 0 30px;
+	overflow: hidden;
+}
+#newInfo div.contentPopup ul.content li.conList div.txtBox div.txt{
+	position: absolute;
+	left: 0px;
+	top:  0;
+	width: 360px;
+	font-size: 16px;
+	line-height: 35px;
+}
+#newInfo div.contentPopup ul.content li.conList div.txtBox div.txt p.boldRed{
+	color: red;
+	font-weight: bold;
+}
+#newInfo div.contentPopup ul.content li.conList div.txtBox div.txt p.boldBlack{
+	color: #000;
+	font-weight: bold;
+}
+#newInfo div.contentPopup ul.content li.conList div.txtBox div.txt p.normal{
+	color: #333;
+}
+#newInfo div.contentPopup ul.content li.conList div.txtBox div.txt p.mBottom{
+	margin-bottom: 35px;
+}
+#newInfo div.contentPopup ul.content li.conList div.txtBox div.scrollBox{
+	position: absolute;
+	right: 20px;
+	height: 350px;
+	width: 10px;
+	background: #fff;
+}
+#newInfo div.contentPopup ul.content li.conList div.txtBox div.scrollBox div.scrollBar{
+	position: absolute;
+	width: 10px;
+	height: 100px;
+	background: #000;
+}
+#newInfo div.contentPopup div.pos{
+	position: absolute;
+	width: 47px;
+	height: 18px;
+	z-index: 9999;
+	top: 50%;
+	margin-top: -9px;
+}
+#newInfo div.contentPopup div.left{
+	left: 0;
+	background: url("../img/home/newInfo/toleft.png") no-repeat;
+}
+#newInfo div.contentPopup div.left:hover{
+	animation: toLeft 2s infinite linear;
+}
+#newInfo div.contentPopup div.right{
+	right: 0;
+	background: url("../img/home/newInfo/toright.png") no-repeat;
+}
+#newInfo div.contentPopup div.right:hover{
+	animation: toRight 2s infinite linear;
+}
+@keyframes toLeft{
+	0{left:0;}
+	50%{left: -20px;}
+	100%{left: 0;}
+}
+@keyframes toRight{
+	0{right: 0;}
+	50%{right: -20px;}
+	100%{right: 0;}
+}
+/********************** gameChar part ***************************/
+#gameChar{
+	position: relative;
+	width: 100%;
+	height: 800px;
+	background: url("../img/home/gameChar/bg3.jpg") no-repeat top center/cover;
+}
+#gameChar .title{
+	position: absolute;
+	left: 50%;
+	margin-left:-400px;
+	width: 800px;
+	height: 150px;
+	background: url("../img/home/gameChar/game_title.png");
+}
+#gameChar div.carousel{
+	position: absolute;
+	top: 160px;
+	left: 50%;
+	width: 1280px;
+	height: 439px;
+	margin-left: -640px;
+}
+#gameChar .carousel .wrap{
+	position: absolute;
+	left: 50%;
+	margin-left: -387px;
+	width: 774px;
+	height: 439px;
+	transform-style: preserve-3d;
+	perspective: 800px;
+	perspective-origin: center center;
+}
+#gameChar .carousel .wrap .pic{
+	position: absolute;
+	width: 776px;
+	height: 439px;
+	transition: 1s;
+	opacity: 0;
+}
+#gameChar .carousel .wrap .mid{
+	z-index: 999;
+	opacity: 1;
+
+}
+#gameChar .carousel .wrap .rSide{
+	transform: rotate3D(0,1,0,-60deg) translate3D(0,0,-200px);
+	transform-origin: right center;
+	cursor: pointer;
+	opacity: 1;
+}
+#gameChar .carousel .wrap .lSide{
+	transform: rotate3D(0,1,0,60deg) translate3D(0,0,-200px);
+	transform-origin: left center;
+	cursor: pointer;
+	opacity: 1;
+}
+#gameChar .carousel .wrap .pic i{
+	position: absolute;
+	display: block;
+}
+#gameChar .carousel .wrap .pic i.top{
+	width: 0;
+	height: 0;
+	left: 15px;
+	top: 15px;
+	border-top: 1px solid red;
+}
+#gameChar .carousel .wrap .pic i.right{
+	width: 0;
+	height: 0;
+	right: 16px;
+	top: 15px;
+	border-left: 1px solid red;
+}
+#gameChar .carousel .wrap .pic i.bottom{
+	width: 0;
+	height: 0;
+	right: 16px;
+	bottom: 15px;
+	border-top: 1px solid red;
+}
+#gameChar .carousel .wrap .pic i.left{
+	width: 0;
+	height: 0;
+	left: 15px;
+	bottom: 15px;
+	border-left: 1px solid red;
+}
+#gameChar .carousel div.btn{
+	position: absolute;
+	top: 50%;
+	margin-top: -41px;
+	width: 42px;
+	height: 82px;
+	cursor: pointer;
+}
+#gameChar .carousel div.left{
+	left: 30px;
+	background: url("../img/home/gameChar/left.png");
+}
+#gameChar .carousel div.right{
+	right: 30px;
+	background: url("../img/home/gameChar/right.png");
+}
+#gameChar .share{
+	position: absolute;
+	top: 700px;
+	left: 50%;
+	margin-left: -300px;
+	width: 600px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	color: #fff;
+}
+#gameChar .share ul{
+	width: 500px;
+	height: 100%;
+}
+#gameChar .share ul li{
+	margin-left:30px;
+}
+#gameChar .share ul li a span{
+	color: #fff;
+}
+#gameChar .share ul li:hover span{
+	color: #999;
+}
+#gameChar .share ul li a img{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}

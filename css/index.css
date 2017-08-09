@@ -1,0 +1,2008 @@
+body{
+	width: 100%;
+	min-width: 1280px;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+/*header part*/
+#header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-width: 1280px;
+	height: 70px;
+	padding: 12px 10px 18px 10px;
+	z-index: 999;
+	transition: .5s;
+}
+#header.active{
+	background: rgba(255,255,255,0.9);
+}
+#header .log{
+	width: 400px;
+	height: 100%;
+	opacity: 0;
+	transition: 1s;
+}
+#header .log.hide{
+	opacity: 1;
+}
+#header .log p.txt{
+	display: inline-block;
+	width: 10px;
+}
+#header .log img{
+	width: 72px;
+	height: 72px;
+	margin-left: 15px;
+}
+#header .log .yys{
+	width: 260px;
+	height: 72px;
+	border-left: 1px solid #333;
+	margin-left: 15px;
+	padding-left: 15px;
+}
+#header .log .yys .img{
+	width: 72px;
+	height: 72px;
+	background-image: url("../img/index/index.png");
+	background-position: 158px 1399px;
+}
+#header .log .yys .wrap{
+	margin-left: 15px;
+}
+#header .log .yys .wrap .title{
+	font-size: 30px;
+	font-weight: bold;
+}
+#header .log .yys .wrap .des{
+	font-size: 16px;
+}
+#header .nav{
+	width: 650px;
+	height: 100%;
+	line-height: 70px;
+}
+#header .nav li{
+	margin-left: 10px;
+	font-size: 16px;
+}
+#header .nav li:nth-child(odd){
+	cursor: pointer;
+	position: relative;
+}
+#header .nav li:nth-child(odd):hover{
+	color: red;
+}
+#header .nav li:nth-last-child(1):hover .dropDownList{
+	display: block;
+}
+#header .nav li.line{
+	width: 20px;
+	height: 30px;
+	background: url("../img/index/index.png") no-repeat -1542px -1435px;
+	margin-top: 20px;
+}
+#header .nav li .dropDownList{
+	display: none;
+	position: absolute;
+	left: -1280px;
+	top: 88px;
+	width: 1400px;
+	height: 200px;
+	background: lightblue;
+}
+#header .nav li .dropDownList:before{
+	position: absolute;
+	content: "";
+	top: -20px;
+	left: 1280px;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 20px solid lightblue;
+}
+#header .nav li .dropDownList .box{
+	position: absolute;
+	left: 50%;
+	margin-left: -640px;
+	width: 1280px;
+	height: 160px;
+	padding: 20px;
+}
+#header .nav li .dropDownList .box>li{
+	width: 223px;
+	height: 150px;
+	border-right: 1px solid #999;
+	color: #000;
+}
+#header .nav li .dropDownList .box li .txt{
+	text-align: center;
+}
+#header .nav li .dropDownList .box .forum .img{
+	width: 80px;
+	height: 70px;
+	background: url("../img/index/index.png") no-repeat -330px -587px;
+	margin: 20px 0 0 75px;
+	transition: 1s;
+}
+#header .nav li .dropDownList .box .forum:hover .img{
+	margin: 0px 0 0 75px;
+}
+#header .nav li .dropDownList .box .postBar .img{
+	width: 81px;
+	height: 68px;
+	background: url("../img/index/index.png") no-repeat -541px -587px;
+	margin: 20px 0 0 75px;
+	transition: 1s;
+}
+#header .nav li .dropDownList .box .postBar:hover .img{
+	margin: 0px 0 0 75px;
+}
+#header .nav li .dropDownList .box .weibo .img{
+	width: 88px;
+	height: 88px;
+	background-image: url("../img/index/wb.png");
+	background-size: 88px 88px;
+	margin: 0 0 0 65px;
+}
+#header .nav li .dropDownList .box .weixin .img{
+	width: 88px;
+	height: 88px;
+	background-image: url("../img/index/wx.jpg");
+	background-size: 88px 88px;
+	margin: 0 0 0 65px;
+}
+#header .nav li .dropDownList .box li.qqGroup{
+	width: 280px;
+	border-right: none;
+	text-align: center;
+}
+#header .nav li .dropDownList .box .qqGroup ul{
+	width: 140px;
+	height: 100px;
+	margin-bottom: 10px;
+}
+#header .nav li .dropDownList .box .qqGroup ul li{
+	line-height: 25px;
+	height: 25px;
+	font-size: 12px;
+}
+/*slide part*/
+#slide{
+	position: relative;
+	width: 100%;
+	height: 586px;
+	background: url("../img/index/header/main_banner.jpg") no-repeat top center;
+}
+#slide .yys{
+	position: absolute;
+	top: 60px;
+	left: 56px;
+	width: 70px;
+	height: 199px;
+	background: url("../img/index/header/logo.png");
+	transition: 1s;
+}
+#slide .yys.scale{
+    transform: scale(0);
+}
+#slide .wave{
+	position: absolute;
+	left: 92px;
+    top: 564px;
+	width: 805px;
+	height: 23px;
+	background: url("../img/index/header/role_botbg.png");
+	z-index: 3;
+}
+#slide .slideBox{
+	position: relative;
+
+}
+#slide .slideBox .slide1,.slide2{
+	position: absolute;
+	width: 900px;
+	height: 580px;
+}
+#slide .slideBox .slide1{
+	
+}
+#slide .slideBox .slide2{
+	opacity: 0;
+}
+#slide .slideBox .slide1 .left{
+	position: absolute;
+	left: 316px;
+    top: 45px;
+	width: 470px;
+	height: 537px;
+	background-image: url("../img/index/header/role1.png");
+}
+#slide .slideBox .slide1 .right{
+	position: absolute;
+	left: 316px;
+    top: 33px;
+	width: 470px;
+	height: 537px;
+	background-image: url("../img/index/header/role2.png");
+}
+#slide .slideBox .slide2 .left{
+	position: absolute;
+    left: 245px;
+    top: -7px;
+	width: 491px;
+	height: 583px;
+	background-image: url("../img/index/header/role3.png");
+	z-index: 1;
+}
+#slide .slideBox .slide2 .right{
+	position: absolute;
+	left: 245px;
+    top: 73px;
+	width: 503px;
+	height: 501px;
+	background-image: url("../img/index/header/role4.png");
+
+}
+#slide .slideBox .btn{
+	position: absolute;
+    left: 950px;
+    top: 290px;
+	width: 41px;
+	height: 66px;
+	background: url("../img/index/index.png") 158px -439px;
+	cursor: pointer;
+}
+#slide .slideBox .gif{
+	position: absolute;
+	top: 395px;
+	left: -100px;
+	width: 102px;
+	height: 119px;
+	background-image: url("../img/index/header/bunny.gif");
+	background-size: 102px 119px;
+	animation: jump 20s infinite linear;
+	z-index: 2;
+}
+@keyframes jump{
+	0{top: 395px;left: -100px;}
+	20%{top: 395px;left: 0px;}
+	21%{top: 450px;left: 50px;}
+	100%{top: 450px;left: 900px;}
+}
+/*gameInfo part*/
+#gameInfo{
+	position: relative;
+	width: 100%;
+	height: 957px;
+}
+#gameInfo .gameCalendar{
+	position: absolute;
+	right: 0px;
+	top: -170px;
+	width: 427px;
+	height: 1107px;
+	background: url("../img/index/side_bg.png");
+	z-index: 4;
+}
+#gameInfo .gameCalendar .title{
+	position: absolute;
+	left: 20px;
+	top: -10px;
+	width: 310px;
+	height: 160px;
+	background: url("../img/index/index.png") no-repeat -584px -857px;
+}
+#gameInfo .gameCalendar .main{
+    position: relative;
+    margin-top: 145px;
+    height: 890px;
+}
+#gameInfo .gameCalendar .main li.mainLi{
+    overflow: hidden;
+    position: absolute;
+    width: 321px;
+    height: 98px;
+    margin-top: 5px;
+    background-image: url("../img/index/index.png");
+    cursor: pointer;
+    transition: height .5s,left .5s,right .5s;
+}
+#gameInfo .gameCalendar .main li.left{
+    left: 27px;
+}
+#gameInfo .gameCalendar .main li.right{
+    right: 105px;
+}
+#gameInfo .gameCalendar .main li.l1{
+    width: 314px;
+    background-position: -661px -1040px;
+    top: 0;
+    transition: height .5s,left .5s;
+}
+#gameInfo .gameCalendar .main li.l1:hover{
+    height: 205px;
+}
+#gameInfo .gameCalendar .main li.l1.pos{
+	background-position: -759px -5px;
+}
+#gameInfo .gameCalendar .main li.l1 .show{
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    width: 187px;
+    height: 40px;
+    font-size: 13px;
+}
+#gameInfo .gameCalendar .main li.l1 div.hide{
+	position: absolute;
+    top: 115px;
+    left: 25px;
+    width: 227px;
+    height: 60px;
+    font-size: 13px;
+}
+#gameInfo .gameCalendar .main li.l1 div.hide .hide{
+	margin-top: 15px;
+}
+#gameInfo .gameCalendar .main li.l2{
+    height: 88px;
+    background-position: -615px -1297px;
+    top: 102px;
+}
+#gameInfo .gameCalendar .main li.l2:hover{
+    height: 363px;
+    z-index: 2;
+}
+#gameInfo .gameCalendar .main li.l2.pos{
+	background-position: -308px 0px;
+}
+#gameInfo .gameCalendar .main li.l2 .show{
+    position: absolute;
+    top: 43px;
+    left: 155px;
+    width: 157px;
+    height: 40px;
+    font-size: 13px;
+}
+#gameInfo .gameCalendar .main li.l2 div.hide{
+	position: absolute;
+    top: 85px;
+    left: 55px;
+    width: 227px;
+    height: 60px;
+    font-size: 13px;
+}
+#gameInfo .gameCalendar .main li.l2 div.hide .hide{
+	margin-top: 15px;
+}
+#gameInfo .gameCalendar .main li.l2 div.hide .hide span{
+	color: red;
+}
+#gameInfo .gameCalendar .main li.l3{
+    width: 306px;
+    height: 93px;
+    background-position: -308px -1297px;
+    top: 191px;
+}
+#gameInfo .gameCalendar .main li.l3:hover{
+    height: 187px;
+    z-index: 2;
+}
+#gameInfo .gameCalendar .main li.l3.pos{
+	background-position: -621px -666px;
+}
+#gameInfo .gameCalendar .main li.l3 .show{
+    position: absolute;
+    top: 43px;
+    left: 25px;
+    width: 207px;
+    height: 40px;
+    font-size: 13px;
+}
+#gameInfo .gameCalendar .main li.l3 div.hide{
+	position: absolute;
+    top: 105px;
+    left: 25px;
+    width: 227px;
+    height: 60px;
+    font-size: 13px;
+}
+#gameInfo .gameCalendar .main li.l4{
+    width: 294px;
+    height: 100px;
+    background-position: -301px -1193px;
+    top: 285px;
+}
+#gameInfo .gameCalendar .main li.l4:hover{
+    height: 187px;
+    z-index: 2;
+}
+#gameInfo .gameCalendar .main li.l4.pos{
+	background-position: -327px -666px;
+}
+#gameInfo .gameCalendar .main li.l4 .show{
+    position: absolute;
+    top: 50px;
+    left: 125px;
+    width: 157px;
+    height: 40px;
+    font-size: 13px;
+}
+#gameInfo .gameCalendar .main li.l4 div.hide{
+	position: absolute;
+    top: 105px;
+    left: 25px;
+    width: 247px;
+    height: 60px;
+    font-size: 13px;
+}
+#gameInfo .gameCalendar .main li.l5{
+    width: 314px;
+    height: 131px;
+    background-position: -330px -1050px;
+    top: 386px;
+    z-index:1;
+}
+#gameInfo .gameCalendar .main li.l5:hover{
+    height: 302px;
+    z-index: 2;
+}
+#gameInfo .gameCalendar .main li.l5.pos{
+	background-position: 0px -374px;
+	z-index: 2;
+}
+#gameInfo .gameCalendar .main li.l5 .show{
+    position: absolute;
+    top: 50px;
+    left: 12px;
+    width: 187px;
+    height: 40px;
+    font-size: 13px;
+}
+#gameInfo .gameCalendar .main li.l5 div.hide{
+	position: absolute;
+    top: 95px;
+    left: 25px;
+    width: 247px;
+    height: 60px;
+    font-size: 13px;
+}
+#gameInfo .gameCalendar .main li.l5 div.hide .hide{
+	margin-top: 10px;
+}
+#gameInfo .gameCalendar .main li.l6{
+    width: 304px;
+    height: 97px;
+    background-position: -4px 259px;
+    top: 468px;
+    z-index: 2;
+}
+#gameInfo .gameCalendar .main li.l6:hover{
+    height: 364px;
+}
+#gameInfo .gameCalendar .main li.l6.pos{
+	background-position: 0 0;
+}
+#gameInfo .gameCalendar .main li.l6 .show{
+    position: absolute;
+    top: 60px;
+    left: 140px;
+    width: 157px;
+    height: 40px;
+    font-size: 13px;
+}
+#gameInfo .gameCalendar .main li.l7{
+    width: 309px;
+    height: 103px;
+    background-position: 478px 669px;
+    top: 555px;
+}
+#gameInfo .gameCalendar .main li.l7.pos{
+	background-position: 478px 669px;
+	z-index: 2;
+}
+#gameInfo .gameCalendar .main li.l7 .show{
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    width: 187px;
+    height: 40px;
+    font-size: 13px;
+}
+#gameInfo .gameCalendar .main li.l8{
+    width: 305px;
+    height: 94px;
+    background-position: 645px 360px;
+    top: 653px;
+}
+#gameInfo .gameCalendar .main li.l8.pos{
+	background-position: 645px 360px;
+}
+#gameInfo .gameCalendar .main li.l8 .show{
+    position: absolute;
+    top: 43px;
+    left: 100px;
+    width: 187px;
+    height: 40px;
+    font-size: 13px;
+}
+#gameInfo .gameCalendar .main li.l9{
+    width: 304px;
+    height: 97px;
+    background-position: -595px 363px;
+    top: 740px;
+}
+#gameInfo .gameCalendar .main li.l9.pos{
+	background-position: -595px 363px;
+	z-index: 2;
+}
+#gameInfo .gameCalendar .main li.l9 .show{
+    position: absolute;
+    top: 55px;
+    left: 18px;
+    width: 187px;
+    height: 40px;
+    font-size: 13px;
+}
+#gameInfo .gameCalendar .main li.left:hover{
+    left: 40px;
+}
+#gameInfo .gameCalendar .main li.right:hover{
+    right: 87px;
+}
+#gameInfo .gameCalendar:after{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 0px;
+	top: 65px;
+	border-left: 5px solid #fccc00;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+}
+/*download*/
+#gameInfo .gameCalendar .download{
+	position: absolute;
+	overflow: hidden;
+    padding: 5px;
+    border-radius: 10px 0 0 10px;
+    background-color: #fccc00;
+    border: 5px solid #fdde00;
+    border-right: none;;
+    height: 110px;
+    top: 43px;
+    right: 427px;
+    transition: width 1s;
+}
+#gameInfo .gameCalendar .shrinkage{
+	width: 25px;
+}
+#gameInfo .gameCalendar .shrinkage .scan{
+	width: 23px;
+    height: 106px;
+	background: url("../img/index/index.png") 231px -613px;
+	cursor: pointer;
+}
+#gameInfo .gameCalendar .stretch{
+	width: 380px;
+}
+#gameInfo .gameCalendar .shrinkage .wrap{
+	display: none;
+}
+#gameInfo .gameCalendar .stretch .wrap{
+	display: block;
+	height: 110px;
+}
+#gameInfo .gameCalendar .stretch .close{
+	display: block;
+    float: left;
+    width: 22px;
+    height: 22px;
+    background:url("../img/index/index.png") 106px -621px;
+    cursor: pointer;
+}
+#gameInfo .gameCalendar .stretch .bg1{
+    position: absolute;
+    left: 25px;
+    width: 43px;
+    height: 100%;
+    background: url(../img/index/index.png) 207px -615px;
+    margin-left: 10px;
+}
+#gameInfo .gameCalendar .stretch .qrcode{
+    position: absolute;
+    left: 80px;
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    padding: 4px;
+    border-radius: 5px;
+    background: #fff url("../img/index/qrcode.png") no-repeat 5px 5px /100px 100px;
+}
+#gameInfo .gameCalendar .stretch .qrcode .line{
+    position: absolute;
+    left: 3px;
+    top: 4px;
+    animation: lineMove 4s linear infinite;
+}
+#gameInfo .gameCalendar .stretch .downLink{
+	position: absolute;
+	left: 200px;
+    width: 171px;
+    margin-left: 10px;
+}
+#gameInfo .gameCalendar .stretch .downLink a{
+    display: block;
+    width: 100%;
+    height: 51px;
+    background-image: url("../img/index/index.png");
+    border-radius: 3px;
+}
+#gameInfo .gameCalendar .stretch .downLink a.android{
+    background-position: -651px 80px;
+    margin-top: 7px;
+}
+#gameInfo .gameCalendar .stretch .downLink a.ios{
+    background-position: -759px -608px;
+}
+#gameInfo .gameCalendar .stretch .downLink a.ios:hover{
+    background-position: -480px 80px;
+}
+#gameInfo .gameCalendar .stretch .downLink a.android:hover{
+    background-position: -907px -959px;
+}
+@keyframes lineMove {
+    0 { top: 4px}
+    50% { top: 100px}
+    100% { top: 4px}
+}
+/*carousel*/
+#gameInfo .carousel{
+	position: relative;
+	width: 360px;
+	height: 300px;
+	padding-top: 30px;
+	overflow: hidden;
+}
+#gameInfo .carousel .picBox{
+	position: absolute;
+	width: 500%;
+	height: 100%;
+}
+#gameInfo .carousel .btnBox{
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	margin-left: -50px;
+	width: 100px;
+	height: 20px;
+}
+#gameInfo .carousel .btnBox .btn{
+	width: 5px;
+	height: 5px ;
+	border: 5px solid  #e37b63;
+	border-radius: 50%;
+	margin-left: 5px;
+}
+#gameInfo .carousel .btnBox li.on{
+	background: #e37b63;
+}
+#gameInfo .tab{
+	position: absolute;
+	left: 390px;
+	top: 0;
+	width: 500px;
+	height: 270px;
+	padding-top: 30px;
+	overflow: hidden;
+}
+#gameInfo .tab .tabBox{
+	width: 500px;
+	height: 47px;
+	border-bottom: 2px solid #000;
+}
+#gameInfo .tab .tabBox .tabs{
+	position: relative;
+	display: inline-block;
+	width: 74px;
+	height: 35px;
+	margin-left: 10px;
+}
+#gameInfo .tab .tabBox .tabs span{
+	position: absolute;
+	display: inline-block;
+	width: 44px;
+	height: 30px;
+	left: 15px;
+	z-index: 2;
+	background-image: url("../img/index/index.png");
+}
+#gameInfo .tab .tabBox .latest span{
+	background-position: -1401px -1151px;
+}
+#gameInfo .tab .tabBox .news span{
+	background-position: -1401px -1031px;
+}
+#gameInfo .tab .tabBox .announce span{
+	background-position: -1401px -1091px;
+}
+#gameInfo .tab .tabBox .activity span{
+	background-position: -1401px -1122px;
+}
+#gameInfo .tab .tabBox .media span{
+	background-position: -1401px -1061px;
+}
+
+#gameInfo .tab .tabBox .tabs em{
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	display: inline-block;
+	width: 74px;
+	height: 33px;
+	border-radius: 15px;
+	background: #68d7fc;
+	opacity: 0;
+	transition: .3s;
+}
+#gameInfo .tab .tabBox .on em{
+	opacity: 1;
+	bottom: -2px;
+}
+#gameInfo .tab .tabBox .tabs i{
+	position: absolute;
+	left: 75px;
+	top: 5px;
+	display: inline-block;
+	width: 17px;
+	height: 28px;
+	background-image: url("../img/index/index.png");
+	background-position: -1542px -1438px;
+}
+#gameInfo .tab .content{
+	position:absolute;
+	width: 500%;
+	height: 205px;
+	border-top: 1px solid #000;
+	margin-top: 12px;
+}
+#gameInfo .tab .content .list{
+	width: 20%;
+}
+#gameInfo .tab .content .list .listBox li{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	border-bottom: 1px dotted #999;
+}
+#gameInfo .tab .content .list .listBox li a{
+	display: block;
+	width: 395px;
+	color: #000;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+#gameInfo .tab .content .list .listBox li span{
+	display: block;
+	width: 70px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 12px;
+	color: #999;
+}
+/*content shishen*/
+#gameInfo>.shishen{
+	width: 100%;
+	height: 607px;
+	background: url("../img/index/content/strategy_bg.jpg");
+	background-position: top center;
+	margin-top: 20px;
+}
+#gameInfo .shishen .tabs{
+	width: 1200px;
+	height: 96px;
+	margin: 0 auto;
+}
+#gameInfo .shishen .tabs .title{
+	width: 130px;
+	height: 69px;
+	background: url("../img/index/index.png");
+	background-position: -411px -587px;
+	margin-top: 13.5px;
+}
+#gameInfo .shishen .tabs .ellipsis{
+	display: block;
+	width: 44px;
+	height: 4px;
+	background: url("../img/index/index.png");
+	background-position: -1422px -153px;
+	margin: 47px 10px 0;
+}
+#gameInfo .shishen .tabs a.shishen{
+	position: relative;
+	width: 100px;
+	height: 91px;
+	margin-top: 2.5px;
+}
+#gameInfo .shishen .tabs a.shishen i{
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	top: 10px;
+	width: 96px;
+	height: 91px;
+	background: url("../img/index/index_new.png");
+	background-position: -939px -1297px;
+	transition: .5s;
+}
+#gameInfo .shishen .tabs a.shishen:hover i,#gameInfo .shishen .tabs a.shishen.on i{
+	opacity: 1;
+	top: 0;
+}
+#gameInfo .shishen .tabs a.shishen span{
+	position: absolute;
+    top: 26px;
+    left: 16px;
+	display: block;
+	width: 70px;
+	height: 33px;
+	background: url("../img/index/index_new.png");
+	background-position: -994px -608px;
+}
+#gameInfo .shishen .tabs a.roles{
+	position: relative;
+	width: 100px;
+	height: 91px;
+	margin-top: 2.5px;
+}
+#gameInfo .shishen .tabs a.roles i{
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	top: 10px;
+	width: 96px;
+	height: 91px;
+	background: url("../img/index/index_new.png");
+	background-position: -939px -1297px;
+	transition: .5s;
+}
+#gameInfo .shishen .tabs a.roles:hover i,#gameInfo .shishen .tabs a.roles.on i{
+	opacity: 1;
+	top: 0;
+}
+#gameInfo .shishen .tabs a.roles span{
+	position: absolute;
+    top: 24px;
+    left: 18px;
+	display: block;
+	width: 64px;
+	height: 36px;
+	background: url("../img/index/index_new.png");
+	background-position: -930px -608px;
+}
+#gameInfo .shishen .content{
+	position: relative;
+	width: 1200px;
+	height: 304px;
+	margin: 30px auto;
+}
+#gameInfo .shishen .content .shishenBox{
+	position: absolute;
+	display: none;
+}
+#gameInfo .shishen .content .shishenBox.on{
+	display: block;
+}
+#gameInfo .shishen .content .shishenBox .topbar{
+	width: 800px;
+	height: 51px;
+	border-bottom: 1px dotted #000;
+}
+#gameInfo .shishen .content .shishenBox .topbar .shishen_tabs{
+	width: 350px;
+	height: 51px;
+}
+#gameInfo .shishen .content .shishenBox .topbar .shishen_tabs .btn{
+	width: 70px;
+	line-height: 51px;
+	height: 51px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+}
+#gameInfo .shishen .content .shishenBox .topbar .shishen_tabs .btn:hover,#gameInfo .shishen .content .shishenBox .topbar .shishen_tabs .btn.on{
+	color: #cea441;
+}
+#gameInfo .shishen .content .shishenBox .topbar .viewAll{
+	display: block;
+	width: 131px;
+	height: 29px;
+	background: url("../img/index/content/viewAll_btn.png");
+	margin-top: 11px;
+}
+#gameInfo .shishen .content .shishenBox .picShowWrap{
+	position: relative;
+	width: 833px;
+	height: 220px;
+	margin-top: 30px;
+}
+#gameInfo .shishen .content .shishenBox .picShowWrap .picContainer{
+	opacity: 0;
+	position: absolute;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#gameInfo .shishen .content .shishenBox .picShowWrap .picContainer.on{
+	opacity: 1;
+}
+#gameInfo .shishen .content .shishenBox .picShowWrap .picContainer .rUl{
+	position: absolute;
+	left: 0px;
+	width: 8000px;
+	height: 220px;
+}
+#gameInfo .shishen .content .shishenBox .picShowWrap .picContainer .prev,.next{
+	position: absolute;
+	top: 80px;
+	width: 42px;
+	height: 33px;
+	z-index: 999;
+	cursor: pointer;
+}
+#gameInfo .shishen .content .shishenBox .picShowWrap .picContainer .prev{
+	left: 0px;
+	background: url("../img/index/index_new.png");
+	background-position: -625px -620px;
+}
+#gameInfo .shishen .content .shishenBox .picShowWrap .picContainer .prev:hover{
+	background-position: -709px -587px;
+}
+#gameInfo .shishen .content .shishenBox .picShowWrap .picContainer .next{
+	right: 0px;
+	background: url("../img/index/index_new.png");
+    background-position: -667px -587px;
+}
+#gameInfo .shishen .content .shishenBox .picShowWrap .picContainer .next:hover{
+	background-position: -625px -587px;
+}
+#gameInfo .shishen .content .shishenBox .picShowWrap .picContainer .rUl .double{
+	width: 114px;
+	height: 207px;
+	border-right: 1px solid #95a7a4;
+	margin-left: 24px;
+}
+#gameInfo .shishen .content .shishenBox .picShowWrap .picContainer .rUl .double li{
+	width: 89px;
+	height: 92px;
+	margin-bottom: 10px;
+}
+#gameInfo .shishen .content .shishenBox .picShowWrap .picContainer .rUl .double li a{
+	position: relative;
+	display: block;
+	width: 89px;
+	height: 92px;
+	background-image: url("../img/index/index_new.png");
+    background-position: -1308px -1193px;
+}
+#gameInfo .shishen .content .shishenBox .picShowWrap .picContainer .rUl .double li a .mask{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: block;
+	width: 89px;
+	height: 92px;
+	border-radius: 50%;
+	background: rgba(0,0,0,0);
+	z-index: 2;
+	transition: .3s;
+}
+#gameInfo .shishen .content .shishenBox .picShowWrap .picContainer .rUl .double li a:hover .mask{
+	background: rgba(0,0,0,0.6);
+}
+#gameInfo .shishen .content .shishenBox .picShowWrap .picContainer .rUl .double li a:hover .textContainer{
+	opacity: 1;
+}
+#gameInfo .shishen .content .shishenBox .picShowWrap .picContainer .rUl .double li a .textContainer{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: block;
+	width: 89px;
+	height: 92px;
+	z-index: 3;
+	opacity: 0;
+	transition: .2s;
+}
+#gameInfo .shishen .content .shishenBox .picShowWrap .picContainer .rUl .double li a .textContainer em{
+	position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+	width: 19px;
+	line-height: 16px;
+	color: #fff;
+	font-size: 14px;
+}
+#gameInfo .shishen .content .shishenBox .picShowWrap .picContainer .rUl .double li a img{
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 82px;
+	height: 82px;
+}
+#gameInfo .shishen .content .shishenBox .picShowWrap .picContainer .rUl .double li a i{
+	position: absolute;
+	top: 0;
+    right: -7px;
+	width: 31px;
+	height: 36px;
+	background: url("../img/index/content/shishen/new_icon.png");
+}
+#gameInfo .shishen .content .rolesBox{
+	position: absolute;
+	display: none;
+	width: 849px;
+	height: 310px;
+}
+#gameInfo .shishen .content .rolesBox.on{
+	display: block;
+}
+#gameInfo .shishen .content .rolesBox .roleBtn{
+	width: 150px;
+	height: 256px;
+}
+#gameInfo .shishen .content .rolesBox .roleBtn .hero{
+	position: relative;
+	width: 140px;
+	height: 39px;
+	border: 2px solid #fff;
+	margin: 20px 0;
+}
+#gameInfo .shishen .content .rolesBox .roleBtn .hero.on,#gameInfo .shishen .content .rolesBox .roleBtn .hero:hover{
+	border: 2px solid #000;
+	background: #fff;
+}
+#gameInfo .shishen .content .rolesBox .roleBtn .on .triangle{
+	position: absolute;
+	display: block;
+	top: 50%;
+	margin-top: -5px;
+	right: -10px;
+	width: 0;
+	height: 0;
+	border-left: 5px solid #000;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+}
+#gameInfo .shishen .content .rolesBox .roleBtn .hero:hover .triangle{
+	position: absolute;
+	display: block;
+	top: 50%;
+	margin-top: -5px;
+	right: -10px;
+	width: 0;
+	height: 0;
+	border-left: 5px solid #000;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+}
+#gameInfo .shishen .content .rolesBox .roleBtn .hero a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	line-height: 39px;
+	text-align: center;
+	color: #000;
+	font-size: 18px;
+}
+#gameInfo .shishen .content .rolesBox .roleWrap{
+	position: relative;
+	width: 640px;
+	height: 100%;
+	margin-left: 15px;
+}
+#gameInfo .shishen .content .rolesBox .roleWrap .rolePic{
+	position: absolute;
+	left: 20px;
+	width: 640px;
+	height: 100%;
+	display: none;
+}
+#gameInfo .shishen .content .rolesBox .roleWrap .rolePic.on{
+	display: block;
+}
+#gameInfo .shishen .content .rolesBox .roleWrap img.QM{
+	display: block;
+	margin: -20px 0 0 70px;
+	width: 302px;
+	height: 338px;
+}
+#gameInfo .shishen .content .rolesBox .roleWrap img.SL{
+	display: block;
+	margin: -20px 0 0 30px;
+	width: 343px;
+	height: 340px;
+}
+#gameInfo .shishen .content .rolesBox .roleWrap img.YBY{
+	display: block;
+	margin: -20px 0 0 30px;
+	width: 357px;
+	height: 336px;
+}
+#gameInfo .shishen .content .rolesBox .roleWrap img.BQN{
+	display: block;
+	margin: -20px 0 0 18px;
+	width: 380px;
+	height: 346px;
+}
+#gameInfo .shishen .content .rolesBox .roleWrap .description{
+	width: 227px;
+	height: 273px;
+	margin: 50px 0 0 15px;
+}
+#gameInfo .shishen .content .rolesBox .roleWrap .description .num{
+	width: 38px;
+	height: 23px;
+	background: url("../img/index/index_new.png");
+}
+#gameInfo .shishen .content .rolesBox .roleWrap .description .num.one{
+	background-position: -1307px -734px;
+}
+#gameInfo .shishen .content .rolesBox .roleWrap .description .num.two{
+	background-position: -1345px -734px;
+}
+#gameInfo .shishen .content .rolesBox .roleWrap .description .num.three{
+	background-position: -1353px -1149px;
+}
+#gameInfo .shishen .content .rolesBox .roleWrap .description .num.four{
+	background-position: -1326px -1297px;
+}
+#gameInfo .shishen .content .rolesBox .roleWrap .description h3{
+	display: block;
+	width: 227px;
+	height: 42px;
+	border-bottom: 2px solid #000;
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+#gameInfo .shishen .content .rolesBox .roleWrap .description ul{
+	width: 227px;
+    color: #333;
+    font-size: 14px;
+    line-height: 22px;
+    padding-top: 5px;
+    border-top: 1px solid #000;
+    margin: 2px 0 19px 0;
+}
+#gameInfo .shishen .content .rolesBox .roleWrap .description a{
+	display: block;
+	width: 55px;
+	height: 43px;
+	background-image: url("../img/index/index_new.png");
+	background-position: -1483px -1380px;
+}
+#gameInfo .shishen .content .rolesBox .roleWrap .description a:hover{
+	opacity: .7;
+}
+/*search part*/
+#gameInfo .search{
+	position: absolute;
+	left: 75px;
+	bottom: 15px;
+	width: 376px;
+	height: 44px;
+}
+#gameInfo .search input{
+	outline: none;
+	border: 2px #000 solid;
+	width: 100%;
+	height: 100%;
+	text-indent: 1em;
+	font-size: 16px;
+}
+#gameInfo .search .searchBtn{
+	position: absolute;
+	top: -10px;
+	right: -4px;
+	width: 58px;
+	height: 58px;
+	background-image: url("../img/index/index_new.png");
+	background-position: -1483px -1214px;
+	cursor: pointer;
+}
+#gameInfo .search .searchBtn:hover{
+	background-position: -1483px -1272px;
+}
+/*strategy part*/
+#strategy{
+	width: 1200px;
+	height: 487px;
+	margin: 0 auto;
+}
+#strategy .left{
+	position: relative;
+	width: 368px;
+	height: 430px;
+	border: 2px solid #000;
+	overflow: hidden;
+}
+#strategy .left .imgBox{
+	position: absolute;
+	left: 0px;
+	width: 200%;
+	height: 228px;
+}
+#strategy .left .imgBox a{
+	display: block;
+	width: 368px;
+	height: 100%;
+}
+#strategy .left .imgBox a.b1{
+	background: url("../img/index/strategy/b1.jpg");
+}
+#strategy .left .imgBox a.b2{
+	background: url("../img/index/strategy/b2.jpg");
+}
+#strategy .left .btnBox{
+	position: absolute;
+	top: 228px;
+	width: 100%;
+	height: 16px;
+	text-align: center;
+	margin: 15px 0;
+}
+#strategy .left .btnBox span{
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border: 4px solid #000;
+	border-radius: 50%;
+}
+#strategy .left .btnBox span.on{
+	background: #000;
+}
+#strategy .left .nav{
+	position: absolute;
+	top: 274px;
+	width: 368px;
+}
+#strategy .left .nav a{
+	position: relative;
+	display: inline-block;
+	width: 24px;
+	height: 134px;
+	padding: 0 32px;
+}
+#strategy .left .nav a:hover span{
+	top: -10px;
+}
+#strategy .left .nav a span{
+	position: absolute;
+	top: 0;
+	display: inline-block;
+	width: 24px;
+	height: 134px;
+	background: url("../img/index/index_new.png");
+	transition: .3s;
+}
+#strategy .left .nav a span.system{
+	background-position: -1368px -315px;
+}
+#strategy .left .nav a i{
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: inline-block;
+	height: 134px;
+	border-right: 2px solid #C9B27C;
+	margin-left: 30px;
+}
+#strategy .left .nav a i:after{
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+	display: block;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-right: 8px solid #C9B27C;
+}
+#strategy .right{
+	width: 790px;
+	height: 437px;
+}
+#strategy .right .topbar{
+	width: 774px;
+	height: 109px;
+	margin: 0 auto;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #999;
+}
+#strategy .right .topbar .tabs{
+	position: relative;
+	display: block;
+	width: 100px;
+	height: 91px;
+    margin-top: 8px
+}
+#strategy .right .topbar .tabs em{
+	position: absolute;
+	opacity: 0;
+	top: 10px;
+	left: 0;
+	display: block;
+	width: 96px;
+	height: 91px;
+	background: url("../img/index/index_v3.png");
+    background-position: -1592px -196px;
+    transition: .5s;
+}
+#strategy .right .topbar .tabs:hover em,#strategy .right .topbar .tabs.on em{
+	opacity: 1;
+	top: 0;
+}
+#strategy .right .topbar .tabs span{
+	position: absolute;
+	display: block;
+	background: url("../img/index/index_v3.png");
+	z-index: 2;
+}
+#strategy .right .topbar .title{
+	width: 134px;
+	height: 85px;
+	background: url("../img/index/index_v3.png");
+    background-position: -1479px -292px;
+    margin-top: 12px;
+}
+#strategy .right .topbar .greenHand span{
+	left: 16px;
+	top: 20px;
+	width: 68px;
+	height: 39px;
+	background-position: -1640px -986px;
+}
+#strategy .right .topbar .shishen span{
+	left: 14.5px;
+	top: 30px;
+	width: 71px;
+	height: 31px;
+	background-position: -1326px -993px;
+}
+#strategy .right .topbar .fight span{
+    left: 12.5px;
+	top: 25px;
+	width: 75px;
+	height: 38px;
+	background-position: -1251px -993px;
+}
+#strategy .right .topbar .skill span {
+    left: 10px;
+	top: 30px;
+	width: 80px;
+	height: 31px;
+	background-position: -661px -1166px;
+}
+#strategy .right .topbar i{
+	display: block;
+    width: 44px;
+    height: 4px;
+    background: url("../img/index/index_v3.png");
+    background-position: -1479px -377px;
+    margin: 53px 7px 0 7px;
+}
+#strategy .right .content{
+	position: relative;
+	width: 850px;
+	height: 300px;
+	margin-top: 18px;
+	overflow: hidden;
+}
+#strategy .right .content .container{
+	position: absolute;
+	width: 500%;
+	height: 100%;
+}
+#strategy .right .content .container ul{
+	width: 850px;
+	height: 300px;
+}
+#strategy .right .content .container ul li{
+	position: relative;
+	width: 357px;
+	height: 59px;
+	border-bottom: 1px dotted #000;
+	margin-right: 50px;
+}
+#strategy .right .content .container ul li:before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -5px;
+	left: 0px;
+	width: 0;
+	height: 0;
+	border: 5px solid transparent;
+	border-left: 5px solid #000;
+}
+#strategy .right .content .container ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 10px 0 0 15px;
+}
+#strategy .right .content .container ul li a p{
+	width: 342px;
+	height: 20px;
+	line-height: 20px;
+	color: #000;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#strategy .right .content .container ul li em{
+	color: #666;
+}
+/*division part*/
+#division{
+	width: 1220px;
+	height: 537px;
+	margin: 0 auto;
+}
+#division .topbar{
+	position: relative;
+	width: 1200px;
+	height: 77px;
+	margin: 0 auto 45px;
+}
+#division .topbar .title{
+	display: block;
+	width: 112px;
+	height: 106px;
+	background: url("../img/index/index_v3.png");
+    background-position: -907px -872px;
+    margin: -19px 24px 0 0;
+}
+#division .topbar .show{
+	width: 1062px;
+	height: 79px;
+	overflow: hidden;
+}
+#division .topbar .wrap{
+	width: 1062px;
+	height: 77px;
+	border-bottom: 2px solid #000;
+	
+}
+#division .topbar .wrap li{
+	width: 155px;
+	height: 77px;
+}
+#division .topbar .wrap li a{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+#division .topbar .wrap li a:hover span,#division .topbar .wrap li.on a span{
+	top: 0;
+}
+#division .topbar .wrap li a:hover em,#division .topbar .wrap li.on a em{
+	bottom: -3px;
+}
+#division .topbar .wrap li a span{
+	position: absolute;
+	top: 20px;
+	display: block;
+	width: 100%;
+	height: 18px;
+	color: #000;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	transition: .5s;
+}
+#division .topbar .wrap li a em{
+	position: absolute;
+	bottom: -54px;
+	display: block;
+	width: 100%;
+	height: 54px;
+	background: url("../img/index/division/topbarBG.png");
+	transition: .5s;
+	z-index: 999;
+}
+#division .topbar .wrap li.recomend a em{
+	background-position: -165px 0;
+}
+#division .topbar .wrap li.draw a em{
+	background-position: -314px 0;
+}
+#division .topbar .wrap li.cosplay a em{
+	background-position: -476px 0;
+}
+#division .topbar .wrap li.fiction a em{
+	background-position: -625px 0;
+}
+#division .topbar .wrap li.master a em{
+	background-position: -924px 0;
+}
+#division .topbar .contribute{
+	position: absolute;
+	top: 30px;
+	right: 2px;
+	display: block;
+	width: 101px;
+	height: 24px;
+	background: url("../img/index/index_v3.png");
+    background-position: -406px -1410px;
+    transition: .5s;
+    cursor: pointer;
+}
+#division .topbar .contribute:hover{
+	right: -25px;
+}
+#division .content{
+	position: relative;
+	width: 1220px;
+	height: 415px;
+	overflow: hidden;
+}
+#division .content .picBox{
+	position: absolute;
+	width: 7320px;
+	height: 100%;
+}
+#division .content .picBox ul{
+	width: 1220px;
+	height: 415px;
+}
+#division .content .picBox ul li{
+	width: 285px;
+	height: 200px;
+	margin: 0 10px 10px;
+}
+#division .content .picBox ul li a{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 163px;
+}
+#division .content .picBox ul li a img{
+	display: block;
+	width: 285px;
+	height: 163px;
+}
+#division .content .picBox ul li a span{
+	position: absolute;
+	top: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	display: none;
+}
+#division .content .picBox ul li a span i{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	display: block;
+	width: 79px;
+	height: 93px;
+	background: url("../img/index/index_v3.png");
+    background-position: -1424px -196px;
+}
+#division .content .picBox ul li a:hover span{
+	display: block;
+}
+#division .content .picBox ul li p{
+	display: block;
+	width: 100%;
+	height: 42px;
+	font-size: 14px;
+	color: #666;
+	margin: 10px 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/*video part*/
+#video{
+    width: 100%;
+    height: 514px;
+    background: url("../img/index/video/video_bg.jpg") top center no-repeat;
+    margin-top: 60px;
+}
+#video .vMain{
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+#video .vMain .box{
+    overflow: hidden;
+    position: absolute;
+    top: 56px;
+    width: 560px;
+    height: 430px;
+}
+#video .vMain .leftvideo{
+    left: 0;
+}
+#video .vMain .rightWallpaper{
+    right: 0;
+}
+#video .vMain .box ul{
+    width : 110%;
+    height: 100%;
+}
+
+#video .vMain .box ul li{
+    float: left;
+    position: relative;
+    width: 270px;
+    height: 200px;
+    margin: 0 20px 18px 0;
+    cursor: pointer;
+    background: #fff;
+}
+#video .vMain .box.rightWallpaper ul li{
+    background: transparent;
+}
+#video .vMain .box ul li.first{
+    background: transparent;
+}
+#video .vMain .box ul li.first i{
+    display: block;
+    width: 227px;
+    height: 150px;
+    background: url(../img/index/index.png) -1079px -466px;
+}
+#video .vMain .rightWallpaper ul li.first i{
+    background-position: -1107px -614px;
+    width: 220px;
+    height: 148px;
+}
+#video .vMain .box ul li .pic{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 154px;
+    transition: .5s;
+}
+#video .vMain .box ul li .pic img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transform-origin: bottom center;
+    transition: .5s;
+}
+#video .vMain .box ul li:hover .pic{
+    height: 162px;
+}
+#video .vMain .box ul li:hover .pic img{
+    transform: scale(1.06);
+}
+#video .vMain .box ul li .dec{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-indent: 15px;
+    line-height: 44px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*activity part*/
+#activity{
+    position: relative;
+    width: 1200px;
+    height: 375px;
+    margin: 60px auto 0;
+}
+#activity .left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 225px;
+    height: 100%;
+}
+#activity .left img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#activity .right{
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 910px;
+    height: 100%;
+}
+#activity .right ul{
+    width: 110%;
+    height: 100%;
+}
+#activity .right ul li{
+    overflow: hidden;
+    float: left;
+    position: relative;
+    width: 270px;
+    height: 153px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+}
+#activity .right ul li img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: .5s;
+}
+#activity .right ul li:hover img{
+    transform: scale(1.06);
+}
+#activity .right ul li .dec{
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    padding: 5px;
+    border: 1px solid #fff;
+}
+/*contact part*/
+#contact{
+    position: relative;
+    width: 1200px;
+    height: 235px;
+    margin: 62px auto 0;
+}
+#contact ul li{
+    float: left;
+    position: relative;
+    margin-right: 116px;
+}
+#contact ul li.l1{
+    width: 70px;
+    height: 199px;
+}
+#contact ul li.qrd{
+    width: 270px;
+    height: 178px;
+    background: #f6f6f6;
+    padding-top: 22px;
+}
+#contact ul li.qrd .p1,#contact ul li.qrd .p2,#contact ul li.qrd .p3{
+    float: left;
+}
+#contact ul li.qrd .p1{
+    margin-left: 30px;
+}
+#contact ul li.qrd .p3,#contact ul li.qrd .p2{
+    margin-left: 10px;
+}
+#contact ul li.qrd .p1,#contact ul li.qrd .p2{
+    width: 16px;
+    font-size: 15px;
+    line-height: 17px;
+}
+#contact ul li.qrd .p3{
+    width: 22px;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 24px;
+}
+#contact ul li.qrd .p4{
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    line-height: 35px;
+}
+#contact ul li.qrd .p4 a{
+    color: #d2c199;
+}
+#contact ul li.qrd .p4 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 53px;
+    height: 2px;
+    background: #ccc;
+}
+#contact ul li.qrd div.img{
+    position: absolute;
+    top: -32px;
+    right: -32px;
+    width: 122px;
+    height: 122px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+#contact ul li.qrd div.img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#contact ul li.l4{
+    width: 160px;
+    height: 230px;
+    margin-right: 0;
+    margin-top: -32px;
+}
+#contact ul li.l4 i{
+    display: block;
+    width: 109px;
+    height: 109px;
+    background: url(../img/index/index.png) -570px -474px;
+}
+#contact ul li.l4 .p1{
+    margin-top: 20px;
+}
+#contact ul li.l4 .p2{
+    font-size: 20px;
+    font-family: Georgia, "Microsoft Yahei", serif;
+}
+#contact ul li.l4 .p4{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    line-height: 35px;
+}
+#contact ul li.l4 .p4 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 53px;
+    height: 2px;
+    background: #ccc;
+}
+#contact ul li.l4 .p4 a{
+    color: #d2c199;
+}
+#contact .goTop{
+    position: absolute;
+    right: -40px;
+    top: 15px;
+    width: 24px;
+    height: 112px;
+    background: url(../img/index/index.png) 203px -466px;
+    cursor: pointer;
+}
+/*footer part*/
+#footer{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 524px;
+    background: url("../img/index/foot.jpg") top center no-repeat;
+    margin-top: 38px;
+}
+#footer .p1{
+    position: relative;
+    top: 110px;
+    width: 591px;
+    height: 29px;
+    background: url(../img/index/index.png) 897px 407px;
+    margin: 0 auto;
+}
+#footer .p2{
+    width: 116px;
+    height: 23px;
+    background: url(../img/index/index.png) -930px -632px;
+    margin: 165px auto 0;
+    opacity: 1;
+    transition: .8s;
+}
+#footer .p3{
+    position: relative;
+    top: 0;
+    width: 22px;
+    height: 71px;
+    background: url(../img/index/index.png) 158px -81px;
+    margin: 31px auto 0;
+    transition: .8s;
+}
+#footer .p4{
+    position: relative;
+    width: 237px;
+    height: 212px;
+    background: url(../img/index/index.png) -331px -363px;
+    margin: 30px auto 0;
+    top: 0;
+    transition: .8s;
+}
+#footer .qrd{
+    position: absolute;
+    left: 50%;
+    top: 240px;
+    width: 200px;
+    height: 160px;
+    margin-left: -75px;
+    opacity: 0;
+    transition: .8s;
+}
+#footer .qrd .pic{
+    float: left;
+    width: 154px;
+    height: 154px;
+    margin-top: 3px;
+    box-shadow: 0 0 25px #67baeb;
+}
+#footer .qrd .pic img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#footer .qrd .txt{
+    float: right;
+    width: 16px;
+    height: 160px;
+    background: url(../img/index/index.png) 278px -311px;
+}
+#footer .hover{
+    width: 300px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+#footer .hover:hover .p2{
+    opacity: 0;
+}
+#footer .hover:hover .p3{
+    top: -80px;
+}
+#footer .hover:hover .qrd{
+    opacity: 1;
+    top: 220px;
+}
+#footer .hover:hover .p4{
+    top: 40px;
+}
+/*share part*/
+#share{
+	width: 600px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	color: #000;
+	margin: 50px auto 0;
+}
+#share ul{
+	width: 500px;
+	height: 100%;
+}
+#share ul li{
+	margin-left:30px;
+}
+#share ul li a span{
+	color: #000;
+}
+#share ul li:hover span{
+	color: #999;
+}
+#share ul li a img{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
